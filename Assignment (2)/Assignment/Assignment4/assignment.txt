@@ -1,0 +1,1 @@
+Get the paragraph from the user and get the frequency of the word for each line and full para. the representation should be proper and completely understandable

@@ -1,0 +1,6 @@
+Task:
+1. Get the value of the slopes.
+2. Get the value of the interception.
+3. Get the coeffcients value.
+4. Get the degree of the line.
+5. Draw the line using the above values.

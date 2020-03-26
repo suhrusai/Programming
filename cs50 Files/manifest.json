@@ -1,0 +1,12 @@
+{
+  "name": "ide50",
+  "id": "6210502",
+  "description": "CS50 IDE",
+  "gitUrl": "",
+  "workspaceType": "cs50-2017-001",
+  "dockerBaseImage": "cloud9/ws-cs50:2018-04-09T15-21-19Z",
+  "owner": {
+    "name": "saisuhrut",
+    "id": "2204644"
+  }
+}

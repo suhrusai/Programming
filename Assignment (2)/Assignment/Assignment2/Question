@@ -1,0 +1,5 @@
+Create the calculator with the functions and classes. function should be of each operator i.e, + - * / // %. 
+The input should be in single line and and find the output. 
+example
+input - 12+3
+output 15 

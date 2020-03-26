@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+int bounus,yoj,yr,yos;
+printf("enter current year");
+scanf("%d",&cy);
+printf("enter year of joining");
+scanf ("%d",&yoj)
+yos=
