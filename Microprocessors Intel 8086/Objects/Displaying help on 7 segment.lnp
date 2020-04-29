@@ -1,0 +1,3 @@
+".\Objects\7 segment numbers.obj" 
+TO ".\Objects\Displaying help on 7 segment" 
+PRINT(".\Listings\Displaying help on 7 segment.m51") CODE( 0X0000-0X0FFF )

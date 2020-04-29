@@ -1,0 +1,108 @@
+C51 COMPILER V9.60.0.0   TRAFFIC                                                           04/29/2020 11:33:07 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE TRAFFIC
+OBJECT MODULE PLACED IN .\Objects\traffic.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE traffic.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\t
+                    -raffic.lst) TABS(2) OBJECT(.\Objects\traffic.obj)
+
+line level    source
+
+   1          
+   2          #include <reg51.h>
+   3          sbit RA = P1^2;
+   4          sbit YA = P1^1;
+   5          sbit GA = P1^0;
+   6          
+   7          sbit RB = P1^5;
+   8          sbit YB = P1^4;
+   9          sbit GB = P1^3;
+  10          
+  11          sbit RC = P3^0;
+  12          sbit YC = P1^7;
+  13          sbit GC = P1^6;
+  14          
+  15          sbit rD = P3^3;
+  16          sbit YD = P3^2;
+  17          sbit GD = P3^1;
+  18          
+  19          
+  20          void Delay (void)
+  21          {
+  22   1        unsigned int i,j;
+  23   1        for (i=0;i<200;i++)
+  24   1          for (j=0;j<500;j++);
+  25   1      }
+  26          
+  27          void SuperDelay ()
+  28          {
+  29   1        unsigned int i;
+  30   1        for (i=0;i<25;i++)
+  31   1          Delay();
+  32   1      }
+  33          
+  34          void main ()
+  35          {
+  36   1        P3  = 0;
+  37   1      
+  38   1        while (1)
+  39   1        {
+  40   2          RA  = 0;  GA  = 1;  YA  = 0;
+  41   2          RB  = 1;  GB  = 0;  YB  = 0;
+  42   2          RC  = 1;  GC  = 0;  YC  = 0;
+  43   2          rD  = 1;  GD  = 0;  YD  = 0;
+  44   2      
+  45   2          SuperDelay();
+  46   2      
+  47   2          GA  = 0;  YA  = 1;
+  48   2          Delay();
+  49   2      
+  50   2          RA  = 1;  GA  = 0;  YA  = 0;
+  51   2          RB  = 0;  GB  = 1;  YB  = 0;
+  52   2          RC  = 1;  GC  = 0;  YC  = 0;
+  53   2          rD  = 1;  GD  = 0;  YD  = 0;
+  54   2      
+C51 COMPILER V9.60.0.0   TRAFFIC                                                           04/29/2020 11:33:07 PAGE 2   
+
+  55   2          SuperDelay ();
+  56   2      
+  57   2          GB  = 0;  YB  = 1;
+  58   2          Delay ();
+  59   2      
+  60   2          RA  = 1;  GA  = 0;  YA  = 0;
+  61   2          RB  = 1;  GB  = 0;  YB  = 0;
+  62   2          RC  = 0;  GC  = 1;  YC  = 0;
+  63   2          rD  = 1;  GD  = 0;  YD  = 0;
+  64   2      
+  65   2          SuperDelay ();
+  66   2      
+  67   2          GC  = 0;  YC  = 1;
+  68   2          Delay();
+  69   2      
+  70   2          RA  = 1;  GA  = 0;  YA  = 0;
+  71   2          RB  = 1;  GB  = 0;  YB  = 0;
+  72   2          RC  = 1;  GC  = 0;  YC  = 0;
+  73   2          rD  = 0;  GD  = 1;  YD  = 0;
+  74   2      
+  75   2          SuperDelay ();
+  76   2      
+  77   2          GD  = 0;  YD  = 1;
+  78   2          Delay();
+  79   2          
+  80   2            
+  81   2        }
+  82   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    167    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\help on 7 segment.obj" 
+TO ".\Objects\Dislaying help on seven segment led" 
+PRINT(".\Listings\Dislaying help on seven segment led.m51") CODE( 0X0000-0X0FFF )
