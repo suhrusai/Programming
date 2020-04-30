@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   LCD                                                               04/29/2020 16:53:46 PAGE 1   
+C51 COMPILER V9.60.0.0   LCD                                                               04/29/2020 23:52:11 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE LCD
@@ -32,7 +32,7 @@ line level    source
   22   2        delay();
   23   2        lcdcmd(0x81);
   24   2        delay();  
-  25   2        printstring("HELLO EVERYONE",14);
+  25   2        printstring("GOOD NIGHT",10);
   26   2        }
   27   1      }
   28          void printstring(char a[],int len){
@@ -62,7 +62,7 @@ line level    source
   52   1      delay();
   53   1      en=0;
   54   1      }
-C51 COMPILER V9.60.0.0   LCD                                                               04/29/2020 16:53:46 PAGE 2   
+C51 COMPILER V9.60.0.0   LCD                                                               04/29/2020 23:52:11 PAGE 2   
 
   55          
   56          void delay()
@@ -74,7 +74,7 @@ line level    source
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
    CODE SIZE        =    166    ----
-   CONSTANT SIZE    =     15    ----
+   CONSTANT SIZE    =     11    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----       7

@@ -22,7 +22,7 @@ void main()
 	delay();
 	lcdcmd(0x81);
 	delay();	
-	printstring("HELLO EVERYONE",14);
+	printstring("GOOD NIGHT",10);
 	}
 }
 void printstring(char a[],int len){
